@@ -1,0 +1,13 @@
+.skills-cont{
+    background-color:#AFAFAF;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+.skill{
+    padding:5px;
+    margin:10px;
+    background-color: #CFCFCF;
+    list-style-type: none;
+    display:inline-block;
+}

@@ -8,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsComponent implements OnInit {
   skills:string[];
   constructor() { 
-    this.skills=["CSS","JavaScript","Html","Angular JS", "React", "C", "SQL"];
+    this.skills=["CSS","JavaScript","Html","AngularJS", "React", "C++", "SQL"];
   }
-
   ngOnInit(): void {
   }
 

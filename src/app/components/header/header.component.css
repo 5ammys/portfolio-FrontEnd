@@ -1,0 +1,12 @@
+.head{
+    background-color: black;
+}
+.logo{
+    margin-left: 4em;
+}
+.btn-in{
+    color: blue;
+    border-color: blue;
+    background-color:white;
+    margin-right:4em;
+}
