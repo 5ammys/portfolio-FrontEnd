@@ -1,0 +1,29 @@
+.margin{
+    border-bottom: 10px;
+    border-color: dimgrey;
+}
+.row{
+    
+}
+.profile{
+
+    text-align: center;
+    position:relative;
+    top:-125px;
+}
+.img-profile{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    border: 15px solid #fff;
+    background-color: white;
+}
+.colum{
+    margin-top: 30px;
+}
+.text-name{
+    text-align: center;
+}
+.title{
+    color:dimgrey;
+}
