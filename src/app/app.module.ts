@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module.ts/app-routing.module.ts.module';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { SkillsComponent } from './components/skills/skills.component';
@@ -13,6 +14,7 @@ import { AboutComponent } from './components/about/about.component';
 import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +24,12 @@ import { ExperienceComponent } from './components/experience/experience.componen
     LoginComponent,
     AboutComponent,
     EducationComponent,
-    ExperienceComponent
+    ExperienceComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     NgCircleProgressModule.forRoot({})
