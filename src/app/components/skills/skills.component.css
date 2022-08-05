@@ -1,13 +1,16 @@
 .skills-cont{
-    background-color:#AFAFAF;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-right: 0;
     text-align: center;
 }
+h3{
+    text-align: center;
+    
+}
+.skill-contenedor{
+    padding-right: 0;
+}
 .skill{
-    padding:5px;
     margin:10px;
-    background-color: #CFCFCF;
-    list-style-type: none;
+    /*list-style-type: none;*/
     display:inline-block;
 }

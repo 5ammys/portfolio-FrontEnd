@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-  skills:string[];
+  skills:any[];
+//Probando dinanismo con ngFor y un array de Objetos
   constructor() { 
-    this.skills=["CSS","JavaScript","Html","AngularJS", "React", "C++", "SQL"];
+    this.skills=[{name:"CSS",percent:50},{name:"Java",percent:73},{name:"React",percent:43},{name:'Angular',percent:56}];
   }
+
   ngOnInit(): void {
   }
 

@@ -1,6 +1,27 @@
 <div class="skills-cont">
     <ul class="skill-contenedor">
-        <h3>Skills</h3>
-        <li class="skill" *ngFor="let skill of skills"> {{skill}}</li>
+        <h4>Habilidades (Blandas y Duras)</h4>
+        <li class="skill" *ngFor="let skill of skills"> 
+            <circle-progress
+                [percent]="skill.percent"
+                [radius]="60"
+                [space]="-10"
+                [outerStrokeGradient]="true"
+                [outerStrokeWidth]="10"
+                [outerStrokeColor]="'#4882c2'"
+                [outerStrokeGradientStopColor]="'#53a9ff'"
+                [innerStrokeColor]="'#e7e8ea'"
+                [innerStrokeWidth]="10"
+                [title]="skill.name"
+                [subtitle]="skill.percent+'%'"
+                [subtitleFontSize]="'14'"
+                [animateTitle]="true"
+                [animationDuration]="480"
+                [showUnits]="false"
+                [showBackground]="true"
+                [clockwise]="false"
+                [startFromZero]="false"
+            ></circle-progress>
+        </li>
     </ul>
 </div>

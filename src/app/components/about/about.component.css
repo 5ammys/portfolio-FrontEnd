@@ -3,10 +3,11 @@
     border-color: dimgrey;
 }
 .row{
-    
+    position :relative;
+    top:-125px;
+    margin-bottom:-125px;
 }
 .profile{
-
     text-align: center;
     position:relative;
     top:-125px;
@@ -15,7 +16,7 @@
     max-width: 250px;
     max-height: 250px;
     border-radius: 50%;
-    border: 15px solid #fff;
+    border: 10px solid #fff;
     background-color: white;
 }
 .colum{

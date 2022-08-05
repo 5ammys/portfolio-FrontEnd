@@ -1,12 +1,16 @@
 .head{
-    background-color: black;
+    background-color: #0072BB;
 }
 .logo{
     margin-left: 4em;
+    max-width: 140px;
+    max-height:70px;
 }
 .btn-in{
-    color: blue;
-    border-color: blue;
-    background-color:white;
     margin-right:4em;
+}
+.banner{
+    background-color: white;
+    max-height: 450px;
+    width: 100%;
 }
