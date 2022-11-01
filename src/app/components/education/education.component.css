@@ -1,9 +1,26 @@
 h4{
-    text-align: center;
-    border-bottom: 1px solid black;
     padding-top: 8px;
     padding-bottom: 8px;
 }
 p{
     margin-left:2em;
+}
+.main{
+    margin-bottom: 50px;
+}
+.line{
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, rgb(32, 32, 32), #ccc);
+}
+.logo{
+    margin-left: -70px;
+    margin-right: 70px;
+}
+hr {
+    margin-top: -5px;
+    height: 2px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }

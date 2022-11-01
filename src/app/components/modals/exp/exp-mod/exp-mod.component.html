@@ -1,0 +1,30 @@
+ <div class="main" *ngIf="check()">
+     <div class="experiencia">
+          <div class="header">
+               <h3>Editar experiencia laboral <span class="close" (click)="close()">&times;</span></h3>
+               
+          </div>
+               <div class="container">
+                    <div class="row">
+                         <div class="col-6">
+                              <p><label for="titilo">Titulo del Puesto</label></p>
+                              <input type="text" name="nombrePuesto" placeholder="Ingrese puesto trabajo" value="{{exp.nombrePuesto}}">
+                              <br>
+                              <label class="input" for="descripcion">Tareas realizadas</label>
+                              <p><textarea name="descripcion"  cols="30" rows="7" value="{{exp.descripcion}}"></textarea></p>
+                         </div>
+                         <div class="col-6">
+                              <p><label for="ini">Fecha inicial</label></p>
+                              <input name="fechaInicio" type="date" name="inicial" >
+                              <p><label class="input" for="fin">Fecha Final</label></p>
+                              <input name="fechaFin" type="date" name="final">
+                              <p><label class="input" for="logo">Logo de la empresa</label></p>
+                              <input name="logo"  type="url" value="{{exp.logo}}">
+                         </div>
+                    </div>
+               </div>
+               <div class="footer">
+                    <button (click)="formSubmit()" class="submit">Actualizar</button>
+               </div>
+     </div>
+</div>

@@ -1,5 +1,30 @@
 <div class="main">
-    <div class="experiencia" *ngFor="let trabajo of trabajos">
-        {{trabajo.cargo}}
+    <div class="container title">
+        <div class="row">
+            <div class="col-11">Experiencia</div>
+            <div class="col-1 plus">
+                <app-add-exp></app-add-exp>
+            </div>
+        </div>
     </div>
+    
+        <div class="experiencia" *ngFor="let trabajo of experiencia | objToArray; index as i">
+            <div class="row">
+                <div class="col-10"><div class="text"><h5><b>{{trabajo.nombrePuesto}}</b></h5></div></div>
+                <div class="col-2">
+                    <app-exp-edit-delete [model]="experiencia[i]"></app-exp-edit-delete>
+                    <app-exp-mod></app-exp-mod>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 exp-img-cont">
+                    <img class="exp-img" src="{{trabajo.logo}}">
+                </div>
+                <div class="col-8">
+                    <p>Del <b>{{trabajo.fechaInicio}}</b> hasta <b>{{trabajo.fechaFin}}</b></p>
+                    <p><b>{{trabajo.titulo}}</b></p>
+                    {{trabajo.descripcion}}
+                </div>
+            </div>
+        
 </div>

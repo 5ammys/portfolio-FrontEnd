@@ -28,3 +28,41 @@
 .title{
     color:dimgrey;
 }
+
+.lbl-edit{
+    top: 60px;
+    left: 90%;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 100px;
+    position:relative;
+    cursor: pointer;
+}
+.lbl-edit:after{
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background:white;
+    border-radius: 100%;
+    top: 4px;
+    left: 5px;
+    transition: 0.3s;
+}
+#btn-edit{
+    display: none;
+}
+#btn-edit:checked~ .lbl-edit{
+    background-color: dodgerblue;
+}
+#btn-edit:checked~ .lbl-edit::after{
+    left: 28px;
+}
+.text{
+    position: absolute;
+    display: block;
+    margin-top: 30px;
+    left: 88%;
+}

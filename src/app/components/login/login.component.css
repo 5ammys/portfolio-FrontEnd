@@ -1,0 +1,46 @@
+.head{
+     background-color: #0072BB;
+ }
+ .logo{
+     margin-left: 4em;
+     max-width: 140px;
+     max-height:70px;
+ }
+ .main{
+     text-align: center;
+     margin-left: 150px;
+     margin-right: 150px;
+ }
+ .title{
+     text-align: center;
+ }
+ .btn-ss{
+   margin-top: 40px;
+    text-align: center;
+ }
+ .btn-ss>button{
+    margin: 10px;
+ }
+ form{
+    margin-left: 25%;
+    margin-right: 25%;
+ }
+ .regist{
+   background-color: green;
+   border-color: green;
+ }
+ .regist:hover{
+   background-color: rgb(0, 100, 0);
+   border-color:rgb(0, 100, 0);
+ }
+ .menu{
+  margin-top: 40px;
+ }
+ .grp{
+    margin-top: 40px;
+ }
+ app-footer{
+   position:absolute;
+   bottom: 0;
+   width: 100%;
+ }

@@ -1,9 +1,9 @@
 <div class="skills-cont">
     <ul class="skill-contenedor">
         <h4>Habilidades (Blandas y Duras)</h4>
-        <li class="skill" *ngFor="let skill of skills"> 
+        <li class="skill" *ngFor="let skill of hab | objToArray"> 
             <circle-progress
-                [percent]="skill.percent"
+                [percent]="skill.porcentaje"
                 [radius]="60"
                 [space]="-10"
                 [outerStrokeGradient]="true"
@@ -12,8 +12,8 @@
                 [outerStrokeGradientStopColor]="'#53a9ff'"
                 [innerStrokeColor]="'#e7e8ea'"
                 [innerStrokeWidth]="10"
-                [title]="skill.name"
-                [subtitle]="skill.percent+'%'"
+                [title]="skill.habilidad.nombre"
+                [subtitle]="skill.porcentaje+'%'"
                 [subtitleFontSize]="'14'"
                 [animateTitle]="true"
                 [animationDuration]="480"

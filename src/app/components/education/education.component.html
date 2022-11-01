@@ -1,14 +1,32 @@
 <div class="main">
-    <h4>Educación</h4>
     <div class="container">
-        <div class="row" *ngFor="let instituto of institutos">
-            <div class="col-lg-3">
-                Imagen
+          <div class="row">
+            <div class="col-11">
+                <h4>Educación</h4>
             </div>
-            <div class="col-lg-9 instituto" >
-                <p>{{instituto.nombre}}</p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolor necessitatibus aliquam adipisci nihil, ea laborum, cum odit qui ipsum natus incidunt sed perspiciatis autem in aliquid rerum libero alias!
+            <div class="col-1 btn">
+                <app-add-edu></app-add-edu>
             </div>
+          </div>
+    </div>
+    
+    <hr>
+    <div class="container" *ngFor="let e of edu | objToArray; index as i">
+        <div class="row">
+            <div class="col-lg-3 logo">
+                <img  [style]="{'width':'300px'}" src="{{e.logo}}">
+            </div>
+            <div class="col-lg-7 instituto" >
+                <p><b>{{e.nombre}}</b> - (Del {{e.fechaInicio}} hasta {{e.fechaFin}})</p>
+                <p><b>{{e.titulo}}</b></p>
+                {{e.descripcion}}
+            </div>
+            <div class="col-lg-2">
+                <app-edu-edit-delete [model]="edu[i]"></app-edu-edit-delete>
+                <app-edu-mod></app-edu-mod>
+            </div>
+            
         </div>
+        <hr style="margin-top: 15px;">
     </div>
 </div>

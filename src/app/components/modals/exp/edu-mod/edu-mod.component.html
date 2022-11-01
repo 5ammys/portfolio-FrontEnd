@@ -1,0 +1,32 @@
+<div class="main" *ngIf="check()">
+     <div class="experiencia">
+          <div class="header">
+               <h3>Editar educacion<span class="close" (click)="close()">&times;</span></h3>
+               
+          </div>
+          <div class="container">
+               <div class="row">
+                    <div class="col-6">
+                         <p><label for="titilo">Nombre Institución</label></p>
+                         <input type="text" placeholder="Ingrese puesto trabajo" value="{{edu.nombre}}">
+                         <br>
+                         <label class="input" for="descripcion">Tareas realizadas</label>
+                         <p><textarea  id="" cols="30" rows="5" value="{{edu.descripcion}}"></textarea></p>
+                         <p><label for="titilo">Titulo/Certificado</label></p>
+                         <input type="text" placeholder="Ingrese su titulo o certificado" value="{{edu.titulo}}">
+                    </div>
+                    <div class="col-6">
+                         <p><label for="ini">Fecha inicial</label></p>
+                         <input type="date" name="inicial" >
+                         <p><label class="input" for="fin">Fecha Final</label></p>
+                         <input type="date" name="final">
+                         <p><label class="input" for="logo">Logo del instituto</label></p>
+                         <input type="url" value="{{edu.logo}}">
+                    </div>
+               </div>
+          </div>
+          <div class="footer">
+               <button type="button" class="submit" (click)="update()">Actualizar</button>
+          </div>
+     </div>
+</div>

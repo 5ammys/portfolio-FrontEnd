@@ -1,9 +1,16 @@
+<div class="text">Activar Edición</div>
+<div class="boton">
+    <input type="checkbox" id="btn-edit" (click)="editSwitch()">
+    <label for="btn-edit" class="lbl-edit"></label>
+</div>
 <div class="container main">
-    <div class="profile"><img class="img-profile" src="../../../assets/perfil.jpg" alt="profile"></div>
+    
+    <div class="profile"><img class="img-profile" src="{{user.fotoPerfil}}" alt="profile"></div>
+    
     <div class="row">
         <div class="col-md-12 colum text-name">
-            <h3>{{user?.nombre}}</h3><p><h4 class="title">{{user?.perfil_profesional}}</h4>
+            <h3>{{user.nombre}} {{user.apellido}}</h3><p><h4 class="title">{{user.perfilProfesional}}</h4>
         </div>
-        <div class="col-md-12 colum"><h3>Acerca de mi</h3><p>{{user?.descripcion}}</div>
+        <div class="col-md-12 colum"><h3>Acerca de mi</h3><p>{{user.descripcion}}</div>
     </div>
 </div>

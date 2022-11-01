@@ -1,6 +1,10 @@
 .head{
     background-color: #0072BB;
 }
+.ico{
+    max-width: 40px;
+    left:0;
+}
 .logo{
     margin-left: 4em;
     max-width: 140px;
